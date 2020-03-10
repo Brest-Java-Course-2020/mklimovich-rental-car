@@ -11,7 +11,7 @@
 
     <modules>
         <module>rental-car-model</module>
-
+        <module>rental-car-test-db</module>
     </modules>
 
     <properties>
