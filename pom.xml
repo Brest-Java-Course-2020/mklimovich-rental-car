@@ -13,6 +13,8 @@
         <module>rental-car-model</module>
         <module>rental-car-test-db</module>
         <module>rental-car-dao</module>
+        <module>rental-car-service</module>
+        <module>rental-car-service-api</module>
     </modules>
 
     <properties>
@@ -39,37 +41,31 @@
         <dependencies>
             <dependency>
                 <groupId>com.epam.brest.courses</groupId>
-                <artifactId>department-management-model</artifactId>
+                <artifactId>rental-car-model</artifactId>
                 <version>${project.version}</version>
             </dependency>
 
             <dependency>
                 <groupId>com.epam.brest.courses</groupId>
-                <artifactId>department-management-test-db</artifactId>
+                <artifactId>rental-car-test-db</artifactId>
                 <version>${project.version}</version>
             </dependency>
 
             <dependency>
                 <groupId>com.epam.brest.courses</groupId>
-                <artifactId>department-management-dao</artifactId>
+                <artifactId>rental-car-dao</artifactId>
                 <version>${project.version}</version>
             </dependency>
 
             <dependency>
                 <groupId>com.epam.brest.courses</groupId>
-                <artifactId>department-management-service-api</artifactId>
+                <artifactId>rental-car-service-api</artifactId>
                 <version>${project.version}</version>
             </dependency>
 
             <dependency>
                 <groupId>com.epam.brest.courses</groupId>
-                <artifactId>department-management-service</artifactId>
-                <version>${project.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.epam.brest.courses</groupId>
-                <artifactId>department-management-web-app</artifactId>
+                <artifactId>rental-car-service</artifactId>
                 <version>${project.version}</version>
             </dependency>
 
