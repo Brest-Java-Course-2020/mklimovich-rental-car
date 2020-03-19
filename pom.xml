@@ -16,6 +16,7 @@
         <module>rental-car-service</module>
         <module>rental-car-service-api</module>
         <module>rental-car-rest-app</module>
+        <module>rental-car-web-app</module>
     </modules>
 
     <properties>
@@ -72,6 +73,11 @@
             <dependency>
                 <groupId>com.epam.brest.courses</groupId>
                 <artifactId>rental-car-rest-app</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.epam.brest.courses</groupId>
+                <artifactId>rental-car-web-app</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
@@ -226,7 +232,7 @@
                             <contextPath>/</contextPath>
                         </webApp>
                         <httpConnector>
-                            <port>8080</port>
+                            <port>8082</port>
                         </httpConnector>
                     </configuration>
                 </plugin>
