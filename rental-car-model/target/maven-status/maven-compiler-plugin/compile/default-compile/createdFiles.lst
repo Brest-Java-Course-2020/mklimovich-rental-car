@@ -1,1 +1,3 @@
 com/epam/brest/courses/model/Car.class
+com/epam/brest/courses/model/Rent.class
+com/epam/brest/courses/model/dto/CarDto.class
