@@ -1,3 +1,5 @@
 com/epam/brest/courses/model/Car.class
-com/epam/brest/courses/model/Rent.class
+com/epam/brest/courses/constants/CarConstants.class
 com/epam/brest/courses/model/dto/CarDto.class
+com/epam/brest/courses/constants/RentConstants.class
+com/epam/brest/courses/model/Rent.class
