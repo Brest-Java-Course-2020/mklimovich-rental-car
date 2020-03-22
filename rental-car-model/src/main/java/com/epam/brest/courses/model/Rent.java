@@ -6,6 +6,8 @@ public class Rent {
 
     private String dateRent;
 
+    private Integer carId;
+
     public Integer getRentId() {
         return rentId;
     }
@@ -24,11 +26,21 @@ public class Rent {
         return this;
     }
 
+    public Integer getCarId() {
+        return carId;
+    }
+
+    public Rent setCarId(Integer carId) {
+        this.carId = carId;
+        return this;
+    }
+
     @Override
     public String toString() {
         return "Rent{" +
                 "rentId=" + rentId +
                 ", dateRent='" + dateRent + '\'' +
+                ", carId=" + carId +
                 '}';
     }
 }

@@ -8,22 +8,25 @@ public class Car {
 
     private String color;
 
-    private Integer rentalId;
-
     public Integer getCarId() {
         return carId;
     }
 
-    public void setCarId(Integer carId) {
+    public Car setCarId(Integer carId) {
+
         this.carId = carId;
+        return  this;
     }
 
     public String getModel() {
         return model;
     }
 
-    public void setModel(String model) {
+    public Car setModel(String model) {
+
         this.model = model;
+        return this;
+
     }
 
     public String getColor() {
@@ -34,21 +37,12 @@ public class Car {
         this.color = color;
     }
 
-    public Integer getRentalId() {
-        return rentalId;
-    }
-
-    public void setRentalId(Integer rentalId) {
-        this.rentalId = rentalId;
-    }
-
     @Override
     public String toString() {
         return "Car{" +
                 "carId=" + carId +
                 ", model='" + model + '\'' +
                 ", color='" + color + '\'' +
-                ", rentalId=" + rentalId +
                 '}';
     }
 }

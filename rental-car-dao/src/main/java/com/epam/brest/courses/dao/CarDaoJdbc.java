@@ -76,7 +76,7 @@ public class CarDaoJdbc implements CarDao {
 
         LOGGER.debug("create(car:{})", car);
         MapSqlParameterSource parameters = new MapSqlParameterSource();
-        parameters.addValue(BRANDCAR, car.getBrandCar());
+        parameters.addValue(MODEL, car.getModel());
         parameters.addValue(COLOR, car.getColor());
 
         KeyHolder generatedKeyHolder = new GeneratedKeyHolder();

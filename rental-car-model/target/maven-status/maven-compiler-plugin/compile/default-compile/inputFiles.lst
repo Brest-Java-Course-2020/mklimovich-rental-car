@@ -1,1 +1,5 @@
-/home/misha/IdeaProjects/mklimovich-rental-car/rental-car-model/src/main/java/com/epam/brest/courses/model/Car.java
+/home/misha/FinalProject/rental-car-model/src/main/java/com/epam/brest/courses/model/Rent.java
+/home/misha/FinalProject/rental-car-model/src/main/java/com/epam/brest/courses/constants/RentConstants.java
+/home/misha/FinalProject/rental-car-model/src/main/java/com/epam/brest/courses/model/dto/CarDto.java
+/home/misha/FinalProject/rental-car-model/src/main/java/com/epam/brest/courses/model/Car.java
+/home/misha/FinalProject/rental-car-model/src/main/java/com/epam/brest/courses/constants/CarConstants.java

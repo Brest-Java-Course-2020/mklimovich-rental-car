@@ -1,6 +1,5 @@
 package com.epam.brest.courses.model.dto;
 
-import java.math.BigDecimal;
 import java.math.BigInteger;
 
 /**
@@ -14,9 +13,9 @@ public class CarDto {
     private Integer carId;
 
     /**
-     * Brand Car.
+     * Model
      */
-    private String brandCar;
+    private String model;
 
     /**
      * Count Rent of the Car.
@@ -32,10 +31,10 @@ public class CarDto {
     /**
      * Constructor with brand car.
      *
-     * @param brandCar brand car
+     * @param model brand car
      */
-    public CarDto(String brandCar) {
-        this.brandCar = brandCar;
+    public CarDto(String model) {
+        this.model = model;
     }
 
     /**
@@ -53,18 +52,18 @@ public class CarDto {
     public void setCarId(Integer carId) {this.carId = carId;}
 
     /**
-     * Returns <code>String</code> representation of this brandCar.
+     * Returns <code>String</code> representation of this model.
      *
-     * @return brandCar Brand Car.
+     * @return model Model Car.
      */
-    public String getBrandCar() {return brandCar;}
+    public String getModel() {return model;}
 
     /**
-     * Sets the Brand Car.
+     * Sets the Model.
      *
-     * @param brandCar Brand Car.
+     * @param model Model Car.
      */
-    public void setBrandCar(String brandCar) {this.brandCar = brandCar;}
+    public void setModel(String model) {this.model = model;}
 
     /**
      * Returns <code>BigInteger</code> representation of count rent
@@ -88,7 +87,7 @@ public class CarDto {
     public String toString() {
         return "CarDto{" +
                 "carId=" + carId +
-                ", brandCar='" + brandCar + '\'' +
+                ", model='" + model + '\'' +
                 ", countRent=" + countRent +
                 '}';
     }

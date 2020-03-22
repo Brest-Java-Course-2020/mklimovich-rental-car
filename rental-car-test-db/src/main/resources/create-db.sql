@@ -1,7 +1,16 @@
 DROP TABLE IF EXISTS car;
 CREATE TABLE car (
   car_id INT NOT NULL AUTO_INCREMENT,
-  brand_car VARCHAR(255) NOT NULL,
+  model VARCHAR(255) NOT NULL,
   color VARCHAR(255) NOT NULL,
+  rent_id INT NOT NULL,
+    PRIMARY KEY (car_id),
+    FOREIGN KEY (rent_id) REFERENCES rent(rent_id)
 );
 
+DROP TABLE IF EXISTS rent;
+CREATE TABLE rent (
+  rent_id INT NOT NULL AUTO_INCREMENT,
+  date_rent VARCHAR(15) NOT NULL,
+  PRIMARY KEY (rent_id)
+);
