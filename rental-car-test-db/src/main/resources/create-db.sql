@@ -4,13 +4,14 @@ CREATE TABLE car (
   model VARCHAR(255) NOT NULL,
   color VARCHAR(255) NOT NULL,
   rent_id INT NOT NULL,
-    PRIMARY KEY (car_id),
-    FOREIGN KEY (rent_id) REFERENCES rent(rent_id)
-);
+  PRIMARY KEY (car_id)
+ );
 
 DROP TABLE IF EXISTS rent;
 CREATE TABLE rent (
   rent_id INT NOT NULL AUTO_INCREMENT,
   date_rent VARCHAR(15) NOT NULL,
-  PRIMARY KEY (rent_id)
+  car_id INT NOT NULL,
+  PRIMARY KEY (rent_id),
+  FOREIGN KEY (car_id) REFERENCES car(car_id)
 );
