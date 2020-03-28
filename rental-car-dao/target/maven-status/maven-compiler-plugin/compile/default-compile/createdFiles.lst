@@ -1,2 +1,4 @@
 com/epam/brest/courses/dao/CarDaoJdbc.class
 com/epam/brest/courses/dao/CarDao.class
+com/epam/brest/courses/dao/CarDaoJdbc$1.class
+com/epam/brest/courses/dao/CarDaoJdbc$CarRowMapper.class
