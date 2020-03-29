@@ -1,12 +1,13 @@
 package com.epam.brest.courses.service;
 
-
-
 import com.epam.brest.courses.model.Car;
 
 import java.util.List;
 import java.util.Optional;
 
+/**
+ * Car DAO Interface.
+ */
 public interface CarService {
 
     /**
@@ -27,7 +28,7 @@ public interface CarService {
     /**
      * Persist new car.
      *
-     * @param car car
+     * @param Car car
      * @return persisted car id.
      */
     Integer create(Car car);
@@ -43,7 +44,7 @@ public interface CarService {
     /**
      * Delete car with specified id.
      *
-     *
+     * @param carId
      * @return number of updated records in the database.
      */
     int delete(Integer carId);

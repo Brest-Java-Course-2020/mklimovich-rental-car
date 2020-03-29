@@ -11,7 +11,7 @@
 
     <artifactId>rental-car-service</artifactId>
 
-    <name>Human Resources Service implementation</name>
+    <name>Rental Car Service implementation</name>
 
     <packaging>jar</packaging>
 

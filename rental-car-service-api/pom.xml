@@ -14,7 +14,7 @@
 
     <artifactId>rental-car-service-api</artifactId>
 
-    <name>Human Resources Service API</name>
+    <name>Rental Car Service API</name>
 
     <packaging>jar</packaging>
 
