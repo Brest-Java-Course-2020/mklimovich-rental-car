@@ -36,7 +36,7 @@
         <constructor-arg ref="employeeDao"/>
     </bean>
 
-    <bean id="employeeDao" class="com.epam.brest.courses.dao.EmployeeDaoJdbc">
+    <bean id="employeeDao" class="com.epam.brest.courses.dao.RentDaoJdbc">
         <constructor-arg ref="namedParameterJdbcTemplate"/>
     </bean>
 
