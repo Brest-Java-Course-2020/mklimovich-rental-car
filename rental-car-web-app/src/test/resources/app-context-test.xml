@@ -52,7 +52,7 @@
         <constructor-arg ref="namedParameterJdbcTemplate"/>
     </bean>
 
-    <bean id="departmentDtoDao" class="com.epam.brest.courses.dao.DepartmentDtoDaoJdbc">
+    <bean id="departmentDtoDao" class="com.epam.brest.courses.dao.CarDtoDaoJdbc">
         <constructor-arg ref="namedParameterJdbcTemplate"/>
     </bean>
 
