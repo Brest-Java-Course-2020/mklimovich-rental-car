@@ -30,7 +30,7 @@
         </property>
     </bean>
 
-    <bean id="departmentDao" class="com.epam.brest.courses.dao.CarDaoJdbc">
+    <bean id="carDao" class="com.epam.brest.courses.dao.CarDaoJdbc">
         <constructor-arg ref="namedParameterJdbcTemplate"/>
     </bean>
 

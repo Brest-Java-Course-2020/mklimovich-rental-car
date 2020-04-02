@@ -1,1 +1,4 @@
+com/epam/brest/courses/rest_app/exception/ErrorResponse.class
+com/epam/brest/courses/rest_app/exception/CarNotFoundException.class
+com/epam/brest/courses/rest_app/CarController.class
 com/epam/brest/courses/rest_app/VersionController.class

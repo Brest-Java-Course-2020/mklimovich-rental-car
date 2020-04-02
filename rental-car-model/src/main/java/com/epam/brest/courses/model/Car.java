@@ -33,8 +33,10 @@ public class Car {
         return color;
     }
 
-    public void setColor(String color) {
+    public Car setColor(String color) {
+
         this.color = color;
+        return this;
     }
 
     @Override
