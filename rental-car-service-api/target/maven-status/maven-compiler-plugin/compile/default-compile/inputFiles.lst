@@ -1,2 +1,4 @@
-/home/misha/IdeaProjects/mklimovich-rental-car/rental-car-service-api/src/main/java/com/epam/brest/courses/service/CarService.java
-/home/misha/IdeaProjects/mklimovich-rental-car/rental-car-service-api/src/main/java/com/epam/brest/courses/service/package-info.java
+/home/misha/FinalProject/rental-car-service-api/src/main/java/com/epam/brest/courses/service/CarService.java
+/home/misha/FinalProject/rental-car-service-api/src/main/java/com/epam/brest/courses/service/package-info.java
+/home/misha/FinalProject/rental-car-service-api/src/main/java/com/epam/brest/courses/service/CarDtoService.java
+/home/misha/FinalProject/rental-car-service-api/src/main/java/com/epam/brest/courses/service/RentService.java
