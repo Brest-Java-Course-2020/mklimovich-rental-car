@@ -17,7 +17,7 @@ import java.util.List;
 import java.util.Optional;
 
 import static com.epam.brest.courses.constants.CarConstants.CAR_ID;
-import static com.epam.brest.courses.constants.RentConstants.DATE_RENT;
+import static com.epam.brest.courses.constants.RentConstants.DATERENT;
 import static com.epam.brest.courses.constants.RentConstants.RENT_ID;
 
 
@@ -32,22 +32,22 @@ public class RentDaoJdbc implements RentDao {
     private static final Logger LOGGER = LoggerFactory.getLogger(CarDaoJdbc.class);
 
     private final static String SELECT_ALL =
-            "select rent_id, date_rent, car_id from rent order by date_rent";
+            "select rent_id, daterent, car_id from rent order by daterent";
 
     private static final String FIND_BY_ID =
-            "select rent_id, date_rent, car_id " +
+            "select rent_id, daterent, car_id " +
             "from rent where rent_id = :rentId";
 
     private static final String FIND_BY_CAR_ID =
-            "select rent_id, date_rent, car_id" +
+            "select rent_id, daterent, car_id " +
             "from rent where car_id = :carId";
 
     private final static String ADD_RENT =
-            "insert into employee (date_rent, car_id) " +
-                    "values (:daterent, :carId)";
+            "insert into rent (daterent, car_id) " +
+                    "values (:dateRent, :carId)";
 
     private static final String UPDATE =
-            "update employee set date_rent = :daterent, car_id = :carId where rent_id = :rentId";
+            "update rent set daterent = :dateRent, car_id = :carId where rent_id = :rentId";
 
     private static final String DELETE =
             "delete from rent where rent_id = :rentId";
@@ -90,7 +90,7 @@ public class RentDaoJdbc implements RentDao {
 
         LOGGER.debug("create(rent:{})", rent);
         MapSqlParameterSource parameters = new MapSqlParameterSource();
-        parameters.addValue(DATE_RENT, rent.getDateRent());
+        parameters.addValue(DATERENT, rent.getDateRent());
         parameters.addValue(CAR_ID,rent.getCarId());
 
         KeyHolder generatedKeyHolder = new GeneratedKeyHolder();
