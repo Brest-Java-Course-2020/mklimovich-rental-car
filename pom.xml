@@ -13,11 +13,12 @@
         <module>rental-car-model</module>
         <module>rental-car-dao</module>
         <module>rental-car-test-db</module>
-        <module>rental-car-web-app</module>
         <module>rental-car-service</module>
         <module>rental-car-service-api</module>
         <module>rental-car-rest-app</module>
-   </modules>
+        <module>rental-car-web</module>
+    </modules>
+
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -57,11 +58,7 @@
                 <artifactId>rental-car-test-db</artifactId>
                 <version>${project.version}</version>
             </dependency>
-            <dependency>
-                <groupId>com.epam.brest.courses</groupId>
-                <artifactId>rental-car-web-app</artifactId>
-                <version>1.0-SNAPSHOT</version>
-            </dependency>
+
             <dependency>
                 <groupId>com.epam.brest.courses</groupId>
                 <artifactId>rental-car-service-api</artifactId>
@@ -76,6 +73,11 @@
             <dependency>
                 <groupId>com.epam.brest.courses</groupId>
                 <artifactId>rental-car-rest-app</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.epam.brest.courses</groupId>
+                <artifactId>rental-car-web</artifactId>
                 <version>${project.version}</version>
             </dependency>
 
@@ -478,5 +480,4 @@
         </plugins>
 
     </reporting>
-
 </project>
