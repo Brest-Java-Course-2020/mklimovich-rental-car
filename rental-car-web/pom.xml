@@ -20,12 +20,10 @@
         <dependency>
             <groupId>com.epam.brest.courses</groupId>
             <artifactId>rental-car-test-db</artifactId>
-            <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>com.epam.brest.courses</groupId>
             <artifactId>rental-car-dao</artifactId>
-            <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>com.epam.brest.courses</groupId>
@@ -34,7 +32,6 @@
         <dependency>
             <groupId>com.epam.brest.courses</groupId>
             <artifactId>rental-car-service</artifactId>
-            <scope>test</scope>
         </dependency>
 
         <dependency>
