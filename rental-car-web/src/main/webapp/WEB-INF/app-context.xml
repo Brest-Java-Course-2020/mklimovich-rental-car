@@ -63,4 +63,9 @@
         <property name="templateEngine" ref="templateEngine" />
         <property name="characterEncoding" value="UTF-8" />
     </bean>
+
+    <bean id="messageSource"
+          class="org.springframework.context.support.ReloadableResourceBundleMessageSource"
+          p:basename="/WEB-INF/messages">
+    </bean>
 </beans>

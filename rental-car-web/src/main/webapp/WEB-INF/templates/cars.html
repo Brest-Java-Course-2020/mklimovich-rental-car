@@ -6,21 +6,31 @@
 <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}"/>
     <body>
 
-    <a href="addCar">Add Car</a>
+    <a href="car.html"
+       th:href="@{/car}">Add Car</a>
     <br/><br/>
         <h3>List of all cars</h3>
     <div>
         <table border="1px" cellpadding="0" cellspacing="0">
             <tr>
                 <th>Model</th>
-
+                <th>CountRent</th>
                 <th>Edit</th>
                 <th>Delete</th>
             </tr>
             <tr th:each ="car : ${cars}">
                 <td th:utext="${car.model}">...</td>
-                <td><a th:href="@{/editCar/{id}(id=${id})}">Edit</a></td>
-                <td><a th:href="@{/deleteCar/{id}(id=${id})}">Delete</a></td>
+                <td th:utext="${car.countRent}">...</td>
+                <td><a href="car.html"
+                   th:href="@{|/car/${car.carId}|}">
+                   <i class="fa fa-pencil"></i> <span
+                        class="d-none d-md-inline">Edit</span></a>
+                    </a></td>
+                <td><a href="#" class="btn-sm btn-outline-secondary"
+                       title="delete car"
+                       data-toggle="tooltip"
+                       data-placement="top">
+                    <i class="fa fa-remove"></i>  Delete  </a></td>
             </tr>
         </table>
     </div>
