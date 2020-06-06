@@ -88,7 +88,7 @@ public class CarDaoJdbc implements CarDao {
         Map<String, Object> params = new HashMap<>();
         params.put(CAR_ID, car.getCarId());
         params.put(MODEL, car.getModel());
-        params.put(COLOR, car.getModel());
+        params.put(COLOR, car.getColor());
         return namedParameterJdbcTemplate.update(updateSql, params);
     }
 

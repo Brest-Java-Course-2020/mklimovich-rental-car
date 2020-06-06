@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>Update User</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+	integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+	crossorigin="anonymous">
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+	integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+	crossorigin="anonymous">
+</head>
+<body>
+	<div class="container my-5">
+	<h3> Update Rent</h3>
+		<div class="card">
+			<div class="card-body">
+				<div class="col-md-8">
+					<form action="#"
+						th:action="@{/rents/update/{id}(id=${rent.id})}"
+						th:object="${rent}" method="post">
+						<div class="row">
+							<div class="form-group col-md-6">
+								<label for="dateRent" class="col-form-label">Date Rent</label> <input
+									type="text" th:field="*{dateRent}" class="form-control" id="dateRent"
+									placeholder="Date Rent"> <span
+									th:if="${#fields.hasErrors('dateRent')}" th:errors="*{dateRent}"
+									class="text-danger"></span>
+							</div>
+							<div class="form-group col-md-8">
+								<label for="carId" class="col-form-label">Car Id</label> <input
+									type="text" th:field="*{carId}" class="form-control" id="carId"
+									placeholder="Car Id"> <span
+									th:if="${#fields.hasErrors('carId')}" th:errors="*{carId}"
+									class="text-danger"></span>
+							</div>
+
+
+							<div class="form-group col-md-8">
+								<input type="submit" class="btn btn-primary"
+									value="Update Rent">
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

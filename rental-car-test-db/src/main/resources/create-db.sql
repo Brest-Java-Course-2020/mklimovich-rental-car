@@ -1,4 +1,4 @@
-DROP TABLE IF EXISTS car cascade;
+DROP TABLE IF EXISTS car ;
 CREATE TABLE car (
   car_id INT NOT NULL AUTO_INCREMENT,
   model VARCHAR(255) NOT NULL,
@@ -6,11 +6,11 @@ CREATE TABLE car (
 PRIMARY KEY (car_id)
 );
 
-DROP TABLE IF EXISTS rent cascade;
+DROP TABLE IF EXISTS rent ;
 CREATE TABLE rent (
   rent_id INT AUTO_INCREMENT,
   daterent VARCHAR(255),
   car_id INT NOT NULL,
 PRIMARY KEY (rent_id),
-FOREIGN KEY (car_id) REFERENCES car(car_id)
+FOREIGN KEY (car_id) REFERENCES car(car_id) ON DELETE CASCADE
 );

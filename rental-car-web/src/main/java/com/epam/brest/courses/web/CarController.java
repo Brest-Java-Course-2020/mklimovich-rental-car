@@ -47,7 +47,7 @@ public class CarController {
      *
      * @return view name
      */
-    @GetMapping(value = "/car/{id}")
+    @GetMapping(value = "/update/{id}")
     public final String gotoEditCarPage(@PathVariable Integer id, Model model) {
 
         LOGGER.debug("gotoEditCarPage({},{})", id, model);
@@ -55,7 +55,7 @@ public class CarController {
         if (optionalCar.isPresent()) {
             model.addAttribute("isNew", false);
             model.addAttribute("car", optionalCar.get());
-            return "car";
+            return "updateCar";
         } else {
             // TODO car not found - pass error message as parameter or handle not found error
             return "redirect:cars";
@@ -68,13 +68,13 @@ public class CarController {
      * @param result binding result
      * @return view name
      */
-    @PostMapping(value = "/car/{id}")
+    @PostMapping(value = "/update/{id}")
     public String updateCar(@Valid Car car, BindingResult result) {
 
-        LOGGER.debug("updateDepartment({}, {})", car, result);
+        LOGGER.debug("updateCar({}, {})", car, result);
         carValidator.validate(car, result);
         if (result.hasErrors()) {
-            return "car";
+            return "updateCar";
         } else {
             this.carService.update(car);
             return "redirect:/cars";
@@ -86,13 +86,13 @@ public class CarController {
      *
      * @return view name
      */
-    @GetMapping(value = "/car")
+    @GetMapping(value = "/add")
     public final String gotoAddCarPage(Model model) {
 
         LOGGER.debug("gotoAddCarPage({})", model);
         model.addAttribute("isNew", true);
         model.addAttribute("car", new Car());
-        return "car";
+        return "addCar";
     }
     /**
      * Persist new car into persistence storage.
@@ -101,14 +101,14 @@ public class CarController {
      * @param result     binding result.
      * @return view name
      */
-    @PostMapping(value = "/car")
+    @PostMapping(value = "/add")
     public String addDepartment(@Valid Car car,
                                 BindingResult result) {
 
-        LOGGER.debug("addDepartment({}, {})", car, result);
+        LOGGER.debug("addCar({}, {})", car, result);
         carValidator.validate(car, result);
         if (result.hasErrors()) {
-            return "car";
+            return "addCar";
         } else {
             this.carService.create(car);
             return "redirect:/cars";
@@ -119,7 +119,7 @@ public class CarController {
      *
      * @return view name
      */
-    @GetMapping(value = "/car/{id}/delete")
+    @GetMapping(value = "delete/{id}")
     public final String deleteCarById(@PathVariable Integer id, Model model) {
 
         LOGGER.debug("delete({},{})", id, model);
